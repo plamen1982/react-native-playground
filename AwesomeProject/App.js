@@ -15,6 +15,7 @@ import {
   Text,
   StatusBar,
   Image,
+  AppRegistry,
 } from 'react-native';
 
 import {
@@ -31,187 +32,345 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView>
-          <Text style={{fontSize: 96}}>Scroll me plz</Text>
+          <View flexDirection="row" justifyContent="space-between">
+            <Text style={{fontSize: 25}}>Scroll me plz</Text>
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+          </View>
+          <Text style={{fontSize: 15}}>If you like</Text>
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
-          <Text style={{fontSize: 96}}>If you like</Text>
+          <Text style={{fontSize: 15}}>Scrolling down</Text>
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
-            }}
-          />
-          <Image
-            source={{
-              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
-            }}
-          />
-          <Text style={{fontSize: 96}}>Scrolling down</Text>
-          <Image
-            source={{
-              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 15}}>What's the best</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
-            }}
-          />
-          <Text style={{fontSize: 96}}>What's the best</Text>
-          <Image
-            source={{
-              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 15}}>Framework around?</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
-            }}
-          />
-          <Text style={{fontSize: 96}}>Framework around?</Text>
-          <Image
-            source={{
-              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 50}}>React Native</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
           <Image
             source={{
               uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
-              width: 64,
-              height: 64,
+              width: 35,
+              height: 35,
             }}
           />
-          <Text style={{fontSize: 80}}>React Native</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 50}}>React Native</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 50}}>React Native</Text>
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Image
+            source={{
+              uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+              width: 35,
+              height: 35,
+            }}
+          />
+          <Text style={{fontSize: 50}}>React Native</Text>
+          <View flexDirection="row" justifyContent="space-around">
+            <Text style={{fontSize: 35}}>Scroll me plz</Text>
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  'https://facebook.github.io/react-native/img/tiny_logo.png',
+                width: 35,
+                height: 35,
+              }}
+            />
+          </View>
         </ScrollView>
       </SafeAreaView>
     </>
