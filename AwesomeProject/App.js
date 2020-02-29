@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import {
   SafeAreaView,
   TouchableOpacity,
@@ -7,22 +7,7 @@ import {
   Text,
 } from 'react-native';
 
-const DATA = [
-  {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-    title: 'First Item',
-  },
-  {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    title: 'Second Item',
-  },
-  {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    title: 'Third Item',
-  },
-];
-
-function Item({id, title, selected, onSelect}) {
+const Item = ({id, title, selected, onSelect}) => {
   return (
     <TouchableOpacity
       onPress={() => onSelect(id)}
@@ -33,39 +18,50 @@ function Item({id, title, selected, onSelect}) {
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
-}
+};
 
-export default function App() {
-  const [selected, setSelected] = React.useState(new Map());
+const App = () => {
+  const [planets, setPlanets] = useState([]);
+  const [selected, setSelected] = useState(new Map());
 
-  const onSelect = React.useCallback(
-    id => {
+  const onSelect = useCallback(
+    name => {
       const newSelected = new Map(selected);
-      newSelected.set(id, !selected.get(id));
+      newSelected.set(name, !selected.get(name));
 
       setSelected(newSelected);
     },
     [selected],
   );
 
+  useEffect(() => {
+    fetch('https://swapi.co/api/planets')
+      .then(data => {
+        return data.json();
+      })
+      .then(dataPlanets => {
+        setPlanets(dataPlanets.results);
+      });
+  }, []);
+
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        data={DATA}
+        data={planets}
         renderItem={({item}) => (
           <Item
-            id={item.id}
-            title={item.title}
-            selected={!!selected.get(item.id)}
+            id={item.name}
+            title={item.name}
+            selected={!!selected.get(item.name)}
             onSelect={onSelect}
           />
         )}
-        keyExtractor={item => item.id}
+        keyExtractor={item => item.name}
         extraData={selected}
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -81,3 +77,5 @@ const styles = StyleSheet.create({
     fontSize: 32,
   },
 });
+
+export default App;

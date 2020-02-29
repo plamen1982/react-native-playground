@@ -2386,6 +2386,11 @@ eslint-plugin-prettier@2.6.2:
     fast-diff "^1.1.1"
     jest-docblock "^21.0.0"
 
+eslint-plugin-react-hooks@^0.0.0-d28bd2994:
+  version "0.0.0-d28bd2994"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-0.0.0-d28bd2994.tgz#d22efbcc8b5fb4e4754a61426169e92401705d91"
+  integrity sha512-E/00eNx7LRWWF/it2l+vzoMFLKsBEFkfS4bDmIAK/Hvs5zryx4otCW1rpRjRiaILwGwT0czsgdIPnlYSvJZbDA==
+
 eslint-plugin-react-hooks@^2.0.1:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.4.0.tgz#db6ee1cc953e3a217035da3d4e9d4356d3c672a4"
