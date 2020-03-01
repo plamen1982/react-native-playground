@@ -1,3 +1,5 @@
+https://www.tecla.io/blog/2019-stats-on-top-js-frameworks-react-angular-and-vue/
+
 # react-native-playground
 
 ## Cheat Sheets
@@ -33,6 +35,7 @@
 ### Issue-3 Animation
 
 1.
+
 2. https://medium.com/wix-engineering/react-native-animations-zero-to-hero-17ebf7e8be81
 
 ## Hooks
@@ -42,8 +45,14 @@
 
 ## React Native
 
+0. https://medium.com/we-talk-it/react-native-what-it-is-and-how-it-works-e2182d008f5e
+   1. https://en.wikipedia.org/wiki/Serialization
+   2. https://www.youtube.com/watch?v=LIeqUPvh8qY - Learn once use everywhere React Native video conference
+   3. https://www.slideshare.net/axemclion/react-native-fabric-review20180725
+   4. React Native Under the hood video - https://www.youtube.com/watch?v=hDviGU-57lU - around min 11:00 about the bridge
+      1. slides - https://speakerdeck.com/frantic/react-native-under-the-hood
 1. https://reactnative.dev/docs/alert
-2. https://reactnative.dev/docs/debugging
+1. https://reactnative.dev/docs/debugging
 
 # Tools used in project
 
