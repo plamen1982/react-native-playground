@@ -1,3 +1,4 @@
+REACT NATIVE IN MEDIUM - https://medium.com/react-native-development
 https://www.tecla.io/blog/2019-stats-on-top-js-frameworks-react-angular-and-vue/
 
 # react-native-playground
@@ -39,6 +40,9 @@ https://www.tecla.io/blog/2019-stats-on-top-js-frameworks-react-angular-and-vue/
       1. https://reactnative.dev/docs/animations#animated-api
       2. https://reactnative.dev/docs/animations#using-the-native-driver
 2. https://blog.bitsrc.io/making-animations-in-react-native-the-simplified-guide-6580f961f6e8
+
+### Issue-7 Publishing on iOS and Android
+   1. https://medium.com/react-native-development/deploying-a-react-native-app-for-ios-pt-1-a79dfd15acb8 
 
 ## Hooks
 
